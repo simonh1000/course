@@ -306,7 +306,7 @@ log1 l =
 -- If you see an even number, produce a log message, "even number: " followed by the even number.
 -- Other numbers produce no log message.
 --
--- /Tip:/ Use `filtering` and `StateT` over (`OptionalT` over `Logger` with a @Data.Set#Set@).
+-- /Tip:/ Use `filtering` and `StateT` over (`OptionalT` over `Logger`) with a @Data.Set#Set@.
 --
 -- >>> distinctG $ listh [1,2,3,2,6]
 -- Logger ["even number: 2","even number: 2","even number: 6"] (Full [1,2,3,6])
